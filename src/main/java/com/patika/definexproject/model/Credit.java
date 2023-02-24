@@ -1,26 +1,30 @@
 package com.patika.definexproject.model;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.patika.definexproject.shared.Views;
+import com.patika.definexproject.validators.UniqueUsername;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "credits")
+@Table(name = "credit")
 public class Credit {
 
     @Id
+    @GeneratedValue
     private Long creditId;
 
     @NotNull
-    @Size(min = 11, max = 11)
     @JsonView(Views.Base.class)
+    @UniqueUsername
     private String tcIdentificationNumber;
 
     @NotNull
@@ -33,17 +37,26 @@ public class Credit {
     private double monthlyIncome;
 
     @NotNull
-    @Size(max = 10,min = 10)
     @JsonView(Views.Base.class)
     private String phoneNumber;
 
     @NotNull
     @DateTimeFormat
+    @JsonView(Views.Base.class)
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date birthDate;
 
+    @NotNull
+    @JsonView(Views.Base.class)
+    private double guarantee;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "users_id", referencedColumnName = "Id")
+    @JsonView(Views.Base.class)
+    private int creditRating;
+
+    @Column(name = "kredi_sonuc")
+    private boolean result;
+
+    @ManyToOne
     private User user;
 
 }

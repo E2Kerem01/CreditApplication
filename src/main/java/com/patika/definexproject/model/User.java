@@ -1,6 +1,8 @@
 package com.patika.definexproject.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.patika.definexproject.shared.Views;
 import com.patika.definexproject.validators.UniqueUsername;
@@ -40,7 +42,8 @@ public class User implements UserDetails {
     @JsonView(Views.Sensitive.class)
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @JsonBackReference
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     private Set<Credit> credits;
 
 

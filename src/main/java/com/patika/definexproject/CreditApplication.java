@@ -15,16 +15,16 @@ public class CreditApplication extends SpringBootServletInitializer {
         SpringApplication.run(CreditApplication.class, args);
 
     }
-    /*@Bean
-    CommandLineRunner createInitialUsers(UserServices userServices){
-        return (args) -> {
-                User user = new User();
-                user.setUsername("user1");
-                user.setEmail("k.metin01@gmail.com");
-                user.setPassword("E2Kerem01.");
-                userServices.save(user);
-            };
-
-    }*/
+//    @Bean
+//    CommandLineRunner createInitialUsers(UserServices userServices){
+//        return (args) -> {
+//                User user = new User();
+//                user.setUsername("user1");
+//                user.setEmail("k.metin01@gmail.com");
+//                user.setPassword("E2Kerem01.");
+//                userServices.save(user);
+//            };
+//
+//    }
 
 }
