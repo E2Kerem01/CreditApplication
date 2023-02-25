@@ -1,15 +1,15 @@
 # CreditApplication
 
-##Proje Konusu:
+## Proje Konusu:
 * Bir kredi başvuru sistemi için, kredi başvuru isteklerini alıp ilgili kriterlere göre müşteriye kredi sonucunu dönen servisin içinde yer alacak restful bir uygulamanın Spring Boot framework kullanılarak yazılması ve isteğe bağlı olarak önyüzünün yazılması
-###Backend 
+### Backend 
 * Kimlik numarası, ad-soyad, aylık gelir, telefon bilgileri, doğum tarihi ve teminat(opsiyonel) kimlik numarasıyla daha önceden yazıldığı varsayılan kredi skoru servisine gidilir ve ilgili kişiye ait kredi skoru alınarak aşağıdaki kurallara göre kullanıcıya kredi sonucu gösterilir. (Onay veya Red olarak iki seçenek olabilir.) 
-###Frontend (opsiyonel): 
+### Frontend (opsiyonel): 
 * Kimlik numarası, ad-soyad, aylık gelir, telefon bilgileri, doğum tarihi ve teminat(opsiyonel) bilgileri form ile alınır ve kullanıcıya kredi sonucu ve kredi limiti gösterilir. 
 
 
 
-#Kurallar:
+# Kurallar:
 
 * Sisteme yeni kullanıcılar tanımlanabilir, mevcut müşteriler güncellenebilir veya silinebilir.
 * Kredi skoru 500’ün altında ise kullanıcı reddedilir. (Kredi sonucu: Red)
