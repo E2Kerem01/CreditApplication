@@ -9,10 +9,10 @@ Kimlik numarası, ad-soyad, aylık gelir, telefon bilgileri, doğum tarihi ve te
 
 
 
-3Kurallar:
+#Kurallar:
 
 
-*Sisteme yeni kullanıcılar tanımlanabilir, mevcut müşteriler güncellenebilir veya silinebilir.
+* Sisteme yeni kullanıcılar tanımlanabilir, mevcut müşteriler güncellenebilir veya silinebilir.
 *Kredi skoru 500’ün altında ise kullanıcı reddedilir. (Kredi sonucu: Red)
 *Kredi skoru 500 puan ile 1000 puan arasında ise ve aylık geliri 5000 TL’nin altında ise
 *Kullanıcının kredi başvurusu onaylanır ve kullanıcıya 10.000 TL limit atanır. (Kredi Sonucu: Onay). Eğer teminat vermişse teminat bedelinin yüzde 10 u kadar tutar kredi limitine eklenir.
