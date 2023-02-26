@@ -27,7 +27,7 @@ public class UserController {
     @PostMapping("users")
     public GenericResponse createUser(@Valid @RequestBody User user) {
         userServices.save(user);
-        return new GenericResponse("user created");
+        return new GenericResponse("Kullanıcı kaydı başarıyla tamamlandı.");
     }
 
     @DeleteMapping("user/{id}")
@@ -40,7 +40,7 @@ public class UserController {
 
 
     @PutMapping("update/{id}")
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(value = HttpStatus.OK, reason = "İlgili user'ın bilgileri güncellendi.")
     public User updateUser(@PathVariable Long id, String email, String username){
         return userServices.updateUser(id,email,username);
 

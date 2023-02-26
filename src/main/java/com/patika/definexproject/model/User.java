@@ -34,6 +34,7 @@ public class User implements UserDetails {
     @NotNull
     @Size(min = 4, max = 255)
     @Column(unique = true)
+    @UniqueUsername
     @JsonView(Views.Base.class)
     private String email;
     @NotNull

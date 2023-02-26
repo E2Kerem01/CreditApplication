@@ -56,6 +56,8 @@ public class Credit {
     @Column(name = "kredi_sonuc")
     private boolean result;
 
+    @JsonView(Views.Base.class)
+    private String username;
     @ManyToOne
     private User user;
 

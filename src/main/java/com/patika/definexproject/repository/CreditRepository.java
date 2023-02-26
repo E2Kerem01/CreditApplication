@@ -15,5 +15,5 @@ public interface CreditRepository extends JpaRepository<Credit, Long> {
         //List<Credit> findByTcIdentificationNumberAndBirthDate(String tcIdentificationNumber, Date birthDate);
 
         Credit findByUser_Id(Long user_id);
-        List<Credit> findByTcIdentificationNumber(String tcIdentificationNumber);
+        List<Credit> findByTcIdentificationNumberAndResultTrue(String tcIdentificationNumber);
 }
