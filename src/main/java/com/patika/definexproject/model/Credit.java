@@ -22,25 +22,25 @@ public class Credit {
     @GeneratedValue
     private Long creditId;
 
-    @NotNull
+    @NotNull(message = "IdentificationNumber can not be null...")
     @JsonView(Views.Base.class)
     @UniqueUsername
     private String tcIdentificationNumber;
 
-    @NotNull
+    @NotNull(message = "Name can not be null...")
     @Size(min = 4, max = 255)
     @JsonView(Views.Base.class)
     private String Name;
 
-    @NotNull
+    @NotNull(message = "Monthly Income can not be null...")
     @JsonView(Views.Base.class)
     private double monthlyIncome;
 
-    @NotNull
+    @NotNull(message = "Phone Number can not be null...")
     @JsonView(Views.Base.class)
     private String phoneNumber;
 
-    @NotNull
+    @NotNull(message = "BirthDate can not be null...")
     @DateTimeFormat
     @JsonView(Views.Base.class)
     @JsonFormat(pattern="yyyy-MM-dd")

@@ -6,7 +6,6 @@ import com.patika.definexproject.model.User;
 import com.patika.definexproject.repository.UserRepository;
 import com.patika.definexproject.service.UserServices;
 import com.patika.definexproject.shared.GenericResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -18,10 +17,15 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
 
-    @Autowired
-    UserServices userServices;
-    @Autowired
-    private UserRepository userRepository;
+
+    private final UserServices userServices;
+
+    private final UserRepository userRepository;
+
+    public UserController(UserServices userServices, UserRepository userRepository) {
+        this.userServices = userServices;
+        this.userRepository = userRepository;
+    }
 
 
     @PostMapping("users")

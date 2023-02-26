@@ -20,7 +20,7 @@ public class CreditApplication extends SpringBootServletInitializer {
         return (args) -> {
                 User user = new User();
                 user.setUsername("user1");
-                user.setEmail("k.metin01@gmail.com");
+                user.setEmail("k.metin001@gmail.com");
                 user.setPassword("E2Kerem01.");
                 userServices.save(user);
             };

@@ -42,7 +42,7 @@ public class CreditController {
 
     @GetMapping("creditsForId/{tcIdentificationNumber}/{birthDate}")
     @ResponseStatus(HttpStatus.FOUND)
-    public List<Credit> getCreditsForId(@PathVariable String tcIdentificationNumber/*, @PathVariable @DateTimeFormat(pattern="yyyy-MM-dd") Date birthDate*/){
+    public List<Credit> getCreditsForId(@PathVariable String tcIdentificationNumber /*, @PathVariable @DateTimeFormat(pattern="yyyy-MM-dd") Date birthDate*/){
         return creditService.getCreditsForId(tcIdentificationNumber);
     }
 }

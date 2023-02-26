@@ -12,8 +12,11 @@ import java.util.Optional;
 public interface CreditRepository extends JpaRepository<Credit, Long> {
 
 
-        //List<Credit> findByTcIdentificationNumberAndBirthDate(String tcIdentificationNumber, Date birthDate);
 
+        List<Credit> findAllByTcIdentificationNumber(String tcIdentificationNumber);
         Credit findByUser_Id(Long user_id);
         List<Credit> findByTcIdentificationNumberAndResultTrue(String tcIdentificationNumber);
+        Credit findAllByTcIdentificationNumberAndResult(String tcIdentificationNumber, boolean result);
+
+
 }

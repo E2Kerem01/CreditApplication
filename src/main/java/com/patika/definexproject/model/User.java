@@ -31,7 +31,7 @@ public class User implements UserDetails {
     @UniqueUsername
     @JsonView(Views.Base.class)
     private String username;
-    @NotNull
+    @NotNull(message = "This email can not be null...")
     @Size(min = 4, max = 255)
     @Column(unique = true)
     @UniqueUsername
