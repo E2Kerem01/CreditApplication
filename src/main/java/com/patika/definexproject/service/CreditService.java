@@ -35,11 +35,11 @@ public class CreditService {
         this.creditMessage = creditMessage;
     }
 
-    public Page<Credit> getPagesOfCredit(Pageable pageable) {
+    public Page<Credit> getPagesOfCredit(Pageable pageable) {                                                                // Tüm kredilerin dönüldüğü servis
         return creditRepository.findAll(pageable);
     }
 
-    public void save(Credit credit) throws IOException {
+    public void save(Credit credit) throws IOException {                                                                       // Kredi koşullarına göre cevabın dönüldüğü servis
         User user = userRepository.findByUsername(credit.getUsername());
 
         if (user==null){
@@ -108,7 +108,7 @@ public class CreditService {
         }
     }
 
-    public List<Credit> getCreditsForId(String tcIdentificationNumber /*, Date birthDate*/) {
+    public List<Credit> getCreditsForId(String tcIdentificationNumber /*, Date birthDate*/) {                               // TCKN numarasına göre kredileri dönen servis
         return creditRepository.findByTcIdentificationNumberAndResultTrue(tcIdentificationNumber);
     }
 }
