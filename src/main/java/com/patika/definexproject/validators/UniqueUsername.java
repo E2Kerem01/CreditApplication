@@ -16,9 +16,7 @@ import javax.validation.Payload;
 public @interface  UniqueUsername {
 
     String message() default "{academicwebsite.constraints.username.UniqueUsername.message}";
-
     Class<?>[] groups() default {};
-
     Class<? extends Payload>[] payload() default {};
 
 
