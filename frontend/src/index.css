@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  background-image: url("/src/images/output-onlinepngtools.png");
+  font-weight: bold;
+  font-size:larger;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}  
+ 
+
+h1 {
+  background: #CCC;
+  font-weight: bolder;
+  font-size:larger;
+  color: rgb(174, 50, 205);
+}
+
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#buttons {
+  
+    color: #fff;
+   
+
+}
+
+#loginPageArea {
+  background-color: whitesmoke;
+  
+  width: 60%;
+  height: 100%;
+  position: absolute;
+
+}
+
+#signPageArea {
+
+  background-color: whitesmoke;
+  
+  width: 60%;
+  height: 100%;
+  position: absolute;
+
+}
+
+#creditPageArea {
+  background-color: whitesmoke;
+  
+  width: 60%;
+  height: 100%;
+  position: absolute;
+}
+
+#creditPageCenter {
+  position: relative;
+  left: 20px;
+}
+
+
+input[name='tcIdentificationNumber'] {
+  position: static;
+  width: 60%;
+  height: 20%;
+
+  
+}
+
+
+input[name='name'] {
+  width: 60%;
+  height: 20%;
+  
+}
+
+input[name='monthlyIncome'] {
+  width: 60%;
+  height: 20%;
+  
+}
+
+input[name='phoneNumber'] {
+  width: 60%;
+  height: 20%;
+  
+}
+
+input[name='birthDate'] {
+  width: 60%;
+  height: 20%;
+  
+  
+}
+
+input[name='quarantee'] {
+  width: 80%;
+  height: 20%;
+
+  
+}
+
+
+#languageSelector {
+  bottom: 10px;
+  width: 25%;
+  position:fixed;
+}
+
+img[name='backimage'] {
+  width: 100%;
+  height: 100%;
+}
+
+
+#creditresponse {
+  background-color: red;
+  border-radius: 2px;
+  font-weight: bolder;
+  font-size:larger;
+
+  
+}
+
+#signupresponse{
+  background-color: green;
+  border-radius: 2px;
+  font-weight: bolder;
+  font-size:larger;
+}
