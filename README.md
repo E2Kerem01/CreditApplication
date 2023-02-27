@@ -29,7 +29,6 @@ Notlar: Kredi limit çarpanı varsayılan olarak 4’tür.
 * Java 1.8
 * Spring Framework
 * PostgreSql Database
-* Tomcat 10
 
 # Technologies Frontend
 
@@ -37,7 +36,7 @@ Notlar: Kredi limit çarpanı varsayılan olarak 4’tür.
 * React.js
 
 # Spring Features
-<u><u>
+
 * Spring Data JPA
 * Spring Boot Maven Plugin
 * Spring Security Core
@@ -47,17 +46,21 @@ Notlar: Kredi limit çarpanı varsayılan olarak 4’tür.
 
 # Credit Applications Screenshots
 
-* User Sign and Login Pages
+## User Sign and Login Pages
+
 ![Ekran Alıntısı 1](https://user-images.githubusercontent.com/62817020/221602401-b8841edf-90ab-49b2-ba0e-c1b417e90490.png)
 
-* Credit Application Page and response
+## Credit Application Page and response
+
 ![Ekran Alıntısı 2](https://user-images.githubusercontent.com/62817020/221602514-a1757b30-e0d2-4b01-92d2-2d41e0f389ec.png)
 ![Ekran Alıntısı 3](https://user-images.githubusercontent.com/62817020/221602635-732a841f-a3ab-43e6-b0ec-2700adcb56d6.png)
 
-* Credit Sms
+## Credit Sms
+
 ![WhatsApp Görsel 2023-02-26 saat 19 28 16](https://user-images.githubusercontent.com/62817020/221602716-075d3077-1f71-4832-898a-bf2db7f1f726.jpg)
 
-* Postman and Swagger Documentation
+## Postman and Swagger Documentation
+
 ![postman](https://user-images.githubusercontent.com/62817020/221602872-c0f0263c-31cd-4c29-96ff-262933791985.png)
 ![swagger](https://user-images.githubusercontent.com/62817020/221602886-ec0bc59b-fef1-48cf-8268-a8f828a8c63f.png)
 
