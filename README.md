@@ -6,7 +6,7 @@
 * Kimlik numarası, ad-soyad, aylık gelir, telefon bilgileri, doğum tarihi ve teminat(opsiyonel) kimlik numarasıyla daha önceden yazıldığı varsayılan kredi skoru servisine gidilir ve ilgili kişiye ait kredi skoru alınarak aşağıdaki kurallara göre kullanıcıya kredi sonucu gösterilir.
 ### Frontend (opsiyonel): 
 * Kimlik numarası, ad-soyad, aylık gelir, telefon bilgileri, doğum tarihi ve teminat(opsiyonel) bilgileri form ile alınır ve kullanıcıya kredi sonucu ve kredi limiti gösterilir. 
-
+* !! Ekran Resimleri https://github.com/E2Kerem01/CreditApplication/tree/master/images
 
 
 # Kurallar:
