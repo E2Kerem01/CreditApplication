@@ -22,3 +22,43 @@
 * Kredinin neticelenmesi sonucunda ilgili başvuru veritabanına kaydedilir. Daha sonrasında ise ilgili telefon numarasına bilgilendirme SMS’i gönderilir ve endpoint’ten onay durum bilgisi (red veya onay), limit bilgisi dönülür.
 * Gerçekleştirilmiş bir kredi başvurusu sadece kimlik numarası ve doğum tarihi bilgisi ile sorgulanabilir. Doğum tarihi ve kimlik bilgisi eşleşmezse sorgulanamamalıdır. 
 Notlar: Kredi limit çarpanı varsayılan olarak 4’tür.
+
+
+# Technologies Backend
+
+* Java 1.8
+* Spring Framework
+* PostgreSql Database
+* Tomcat 10
+
+# Technologies Frontend
+
+* JavaScript
+* React.js
+
+# Spring Features
+<u><u>
+* Spring Data JPA
+* Spring Boot Maven Plugin
+* Spring Security Core
+* PostgreSql Driver
+* Lombok 
+* Springdoc Openapi
+
+# Credit Applications Screenshots
+
+* User Sign and Login Pages
+![Ekran Alıntısı 1](https://user-images.githubusercontent.com/62817020/221602401-b8841edf-90ab-49b2-ba0e-c1b417e90490.png)
+
+* Credit Application Page and response
+![Ekran Alıntısı 2](https://user-images.githubusercontent.com/62817020/221602514-a1757b30-e0d2-4b01-92d2-2d41e0f389ec.png)
+![Ekran Alıntısı 3](https://user-images.githubusercontent.com/62817020/221602635-732a841f-a3ab-43e6-b0ec-2700adcb56d6.png)
+
+* Credit Sms
+![WhatsApp Görsel 2023-02-26 saat 19 28 16](https://user-images.githubusercontent.com/62817020/221602716-075d3077-1f71-4832-898a-bf2db7f1f726.jpg)
+
+* Postman and Swagger Documentation
+![postman](https://user-images.githubusercontent.com/62817020/221602872-c0f0263c-31cd-4c29-96ff-262933791985.png)
+![swagger](https://user-images.githubusercontent.com/62817020/221602886-ec0bc59b-fef1-48cf-8268-a8f828a8c63f.png)
+
+
